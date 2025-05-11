@@ -31,5 +31,5 @@ class TestMinimaNota {
 		String mensajeObtenido = exception.getMessage();
 		assertEquals(mensajeEsperado, mensajeObtenido);
 	}
-
+ 
 }
