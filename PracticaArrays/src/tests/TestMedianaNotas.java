@@ -9,7 +9,7 @@ import util.MisArrays;
 
 class TestMedianaNotas {
 
-static float arrayNotas [];
+	static float arrayNotas [];
 	
 	@BeforeAll
 	static void setup() {

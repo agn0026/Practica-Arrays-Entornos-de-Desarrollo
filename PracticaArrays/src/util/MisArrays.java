@@ -64,6 +64,31 @@ public abstract class MisArrays {
 		}
 		return  media;
 	}
+	
+	/**
+	 * Calcula la maxima nota que se encuentran en un array pasado por parametro y su valores comprenden entre el 0 y 10 con decimales
+	 *
+	 * @param nuevoArray
+	 *
+	 * @return el maximo en un entero de las notas pasadas
+	 *
+	 * @throws IllegalArgumentException
+	 */
+	public static int maximaNota (float nuevoArray []) throws IllegalArgumentException{
+		float maximo = nuevoArray[0];
+		for (int i=0; i<nuevoArray.length; i++) {
+			if (nuevoArray[i]<0 || nuevoArray[i]>10) {
+				throw new IllegalArgumentException ("Alguno de los numeros del array no esta entre 0 y 10");
+			}else {
+				if (nuevoArray [i] > maximo) {
+					maximo = nuevoArray [i];
+				}
+			}
+		}
+		
+		return (int)maximo;
+	}
+
 
 	
 }
